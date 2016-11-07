@@ -14,7 +14,7 @@ class FrontendRouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Endpoints\Frontend\Controllers';
+    protected $namespace = 'App\Endpoints\Frontend\Http\Controllers';
 
     /**
      * Define the "web" routes for the application.
@@ -28,7 +28,7 @@ class FrontendRouteServiceProvider extends ServiceProvider
         Route::group([
             'namespace' => $this->namespace,
         ], function ($router) {
-            require __DIR__ . '/../routes.php';
+            require __DIR__ . '/../Http/routes.php';
         });
     }
 }

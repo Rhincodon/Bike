@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Endpoints\Frontend\Controllers;
+namespace App\Endpoints\Frontend\Http\Controllers;
 
 use App\Core\Http\Controller;
 use App\Core\Http\Features\ShowViewFeature;
